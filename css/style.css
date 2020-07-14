@@ -1,0 +1,879 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	background-color: #f6f4f4;
+	line-height: 1.7rem;
+}
+
+/************************************* Landing Page **************************************/
+
+header {
+	background-image: url(/data/sunglasses_background.jpg);
+	height: 100vh;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+}
+
+header #header {
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+}
+
+h1 {
+	margin-top: 1.7rem;
+	margin-left: 4rem;
+	font-size: 2.5rem;
+}
+
+h1 a {
+	color: white;
+	text-decoration: none;
+}
+
+h1,
+li {
+	font-family: 'Dancing Script', cursive;
+}
+
+nav {
+	width: 15rem;
+	margin-right: 3rem;
+}
+
+li {
+	display: inline;
+	font-size: 1.8rem;
+}
+
+li:nth-child(1) {
+	margin-right: 2rem;
+	margin-left: 2rem;
+}
+
+li a {
+	color: black;
+	text-decoration: none;
+}
+
+h2 {
+	text-align: center;
+	margin: auto;
+	margin-top: 24vh;
+	font-family: "Sacramento", cursive;
+	font-size: 5.9rem;
+	font-weight: lighter;
+}
+
+h4 {
+	width: 10.688rem;
+	height: 2.7rem;
+	padding: 0.7rem;
+	text-align: center;
+	margin: 40vh auto;
+	font-family: 'Montserrat', sans-serif;
+	background-color: rgba(0, 0, 0, 0.18);
+	border-radius: 0.5rem;
+}
+
+h4 a {
+	color: white;
+	text-decoration: none;
+}
+h4 {
+	transition: all 1s;
+	box-shadow: 0.2rem 0.2rem 0.6rem black;
+	transition-property: transform, background-color;
+}
+
+h4:hover {
+	background-color: black;
+	transform: scale(1.2);
+}
+
+@media screen and (max-width: 1024px) {
+	nav {
+		width: 22rem;
+	}
+	h1 {
+		margin-top: 2rem;
+		font-size: 3rem;
+	}
+	li {
+		font-size: 2.1rem;
+	}
+	li:nth-child(1) {
+		margin-left: 7rem;
+	}
+	h2 {
+		margin-top: 28vh;
+		font-size: 4.9rem;
+		font-weight: lighter;
+	}
+
+	h4 {
+		font-size: 1.2rem;
+		width: 11rem;
+		height: 3rem;
+		padding: 0.7rem;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	header {
+		background-image: url(/data/sunglasses_background.jpg);
+		height: 80vh;
+		width: 100%;
+		background-size: cover;
+		background-position: center;
+	}
+	h1 {
+		margin-top: 1.7rem;
+		margin-left: 2rem;
+		font-size: 2rem;
+	}
+
+	li {
+		font-size: 1.2rem;
+	}
+
+	li:nth-child(1) {
+		margin-left: 7rem;
+	}
+	h2 {
+		text-align: center;
+		margin: auto;
+		margin-top: 21vh;
+		font-family: "Sacramento", cursive;
+		font-size: 3rem;
+		font-weight: lighter;
+	}
+
+	h4 {
+		font-size: 1rem;
+		margin: 28vh auto;
+	}
+}
+
+@media screen and (max-width: 380px) {
+	header #header {
+		display: flex;
+		flex-direction: column;
+	}
+
+	nav {
+		width: 100%;
+		margin-right: 0;
+	}
+
+	h2 {
+		margin-top: 2.9rem;
+		font-size: 2.5rem;
+	}
+
+	h1 {
+		margin: 1rem 0;
+		width: 100%;
+		text-align: center;
+		font-size: 2.5rem;
+	}
+
+	ul {
+		display: flex;
+		flex-direction: column;
+	}
+	li:nth-child(1) {
+		width: 100%;
+		margin-left: 0;
+		margin-bottom: 0rem;
+	}
+	li {
+		text-align: center;
+		font-size: 1.2rem;
+		background-color: rgba(255, 255, 255, 0.37);
+		border: 1px solid rgba(255, 255, 255, 0.55);
+	}
+
+	h4 {
+		padding: 0;
+		width: 6rem;
+		height: 2rem;
+	}
+
+	h4 a {
+		font-size: 0.7rem;
+	}
+}
+/*************************************** End of Landing Page **************************************/
+
+/**************************************Common in Products****************************************/
+
+.product {
+	width: 75vw;
+	margin: auto;
+	background-color: white;
+	border-radius: 0.625rem;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	padding-bottom: 2rem;
+}
+
+.product img {
+	transition: all 1s;
+	transition-property: transform, box-shadow;
+}
+
+.product img:hover {
+	cursor: pointer;
+	box-shadow: 0.2rem 0.2rem 0.6rem black;
+	transform: scale(1.1);
+}
+
+/**************************************End of common in Product****************************************/
+
+/**************************************First Product****************************************/
+h3 {
+	text-align: center;
+	margin: 1.3rem auto;
+	font-size: 2rem;
+}
+
+h5 {
+	margin-left: 7rem;
+	padding-top: 3rem;
+	font-size: 1.5rem;
+	color: #329c92;
+}
+
+p {
+	margin-left: 7rem;
+	margin-top: 1rem;
+	margin-bottom: 1.5rem;
+	font-size: 1rem;
+	color: #445962;
+}
+
+.first-product {
+	width: 58rem;
+	margin-left: 7rem;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 2rem;
+}
+
+.stacks {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.first-product img {
+	width: 30rem;
+	border-radius: 0.8rem;
+}
+
+#man-sunglasses {
+	width: 25rem;
+	height: 35rem;
+}
+
+.funky-glasses {
+	width: 40rem;
+	height: 17rem;
+}
+
+@media screen and (max-width: 1295px) {
+	h3 {
+		font-size: 2.5rem;
+	}
+	h5 {
+		font-size: 2rem;
+	}
+
+	p {
+		font-size: 1.2rem;
+		width: 45rem;
+	}
+	.product {
+		width: 60em;
+		margin-top: 1.5rem;
+	}
+
+	.first-product {
+		width: 45rem;
+		margin-left: 7rem;
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 2rem;
+	}
+
+	.first-product img {
+		width: 22em;
+		height: 13em;
+		border-radius: 0.8rem;
+	}
+
+	#man-sunglasses {
+		width: 20em;
+		height: 27em;
+	}
+}
+
+@media screen and (max-width: 1025px) {
+	.first-product {
+		width: 45rem;
+		margin-left: 7rem;
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 2rem;
+	}
+
+	.first-product img {
+		width: 23em;
+		height: 13em;
+		border-radius: 0.8rem;
+	}
+
+	#man-sunglasses {
+		width: 20em;
+		height: 27em;
+	}
+}
+@media screen and (max-width: 900px) {
+	.product {
+		width: 50rem;
+	}
+
+	h5 {
+		width: 40rem;
+		margin-left: 3rem;
+	}
+
+	p {
+		width: 40rem;
+		margin-left: 3rem;
+	}
+	.first-product {
+		width: 45rem;
+		margin-left: 3rem;
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 2rem;
+	}
+
+	.first-product img {
+		width: 23em;
+		height: 13em;
+		border-radius: 0.8rem;
+	}
+}
+@media screen and (max-width: 770px) {
+	h3 {
+		font-size: 1.8rem;
+	}
+	h5 {
+		width: 30rem;
+		margin-left: 4rem;
+	}
+
+	p {
+		width: 30rem;
+		margin-left: 4rem;
+	}
+
+	.product {
+		width: 35rem;
+	}
+	.first-product {
+		width: 30rem;
+		height: 64rem;
+		margin-left: 1.6rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		margin-bottom: 2rem;
+		align-items: center;
+	}
+
+	.first-product img {
+		width: 23em;
+		height: 13em;
+		border-radius: 0.8rem;
+	}
+
+	#man-sunglasses {
+		width: 23em;
+		height: 30em;
+	}
+
+	.stacks {
+		height: 30rem;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	h3 {
+		font-size: 1.3rem;
+	}
+	h5 {
+		width: 25rem;
+		margin-left: 2rem;
+		margin-top: 1.5rem;
+	}
+
+	p {
+		width: 20rem;
+		margin-left: 2rem;
+	}
+	.product {
+		width: 25rem;
+	}
+	.first-product {
+		width: 20rem;
+		height: 57.5rem;
+		margin-left: 2.5rem;
+	}
+	.first-product img {
+		width: 20em;
+		height: 13em;
+		border-radius: 0.8rem;
+	}
+	#man-sunglasses {
+		width: 19em;
+		height: 27em;
+	}
+	.stacks {
+		height: 28rem;
+	}
+}
+@media screen and (max-width: 415px) {
+	h3 {
+		font-size: 1.7rem;
+	}
+	h5 {
+		width: 18rem;
+		margin-left: 2rem;
+		margin-top: 1.5rem;
+		font-size: 1.5rem;
+	}
+
+	p {
+		width: 18rem;
+		margin-left: 2rem;
+		font-size: 1rem;
+	}
+	.product {
+		width: 25rem;
+	}
+	.first-product {
+		width: 20rem;
+		height: 57.5rem;
+		margin-left: 2.5rem;
+	}
+	.first-product img {
+		width: 20em;
+		height: 13em;
+		border-radius: 0.8rem;
+	}
+	#man-sunglasses {
+		width: 19em;
+		height: 27em;
+	}
+	.stacks {
+		height: 28rem;
+	}
+}
+@media screen and (max-width: 380px) {
+	h3 {
+		font-size: 1.5rem;
+	}
+	h5 {
+		width: 15rem;
+		margin: auto;
+		margin-top: 1.5rem;
+		font-size: 1.2rem;
+	}
+
+	p {
+		width: 15rem;
+		margin: auto;
+		font-size: 0.8rem;
+	}
+	.product {
+		width: 100%;
+	}
+	.first-product {
+		width: 15rem;
+		height: 50.9rem;
+		margin: auto;
+		margin-top: 1rem;
+	}
+	.first-product img {
+		width: 17em;
+		height: 12em;
+		border-radius: 0.8rem;
+	}
+	#man-sunglasses {
+		width: 16em;
+		height: 23em;
+	}
+	.stacks {
+		height: 26rem;
+	}
+}
+
+/**************************************End of first Product****************************************/
+
+/*************************************In between pictures****************************************/
+.glasses-wear {
+	width: 75vw;
+	margin: auto;
+	margin-bottom: 3rem;
+}
+
+.shades-wear {
+	width: 37.3vw;
+}
+
+@media screen and (max-width: 1025px) {
+	.glasses-wear {
+		width: 72vw;
+		margin: auto;
+		margin-bottom: 3rem;
+	}
+
+	.shades-wear {
+		width: 35vw;
+	}
+}
+@media screen and (max-width: 500px) {
+	.glasses-wear {
+		width: 91vw;
+		margin: auto;
+		margin-bottom: 3rem;
+	}
+
+	.shades-wear {
+		width: 45vw;
+	}
+}
+@media screen and (max-width: 415px) {
+	.glasses-wear {
+		width: 95.1vw;
+		margin-left: 0.5rem;
+		margin-bottom: 3rem;
+	}
+
+	.shades-wear {
+		width: 47vw;
+	}
+}
+
+@media screen and (max-width: 380px) {
+	.glasses-wear {
+		width: 100vw;
+		margin: auto;
+		margin-bottom: 3rem;
+	}
+
+	.shades-wear {
+		width: 100%;
+	}
+}
+
+/*************************************In between pictures****************************************/
+
+/**************************************Second Product****************************************/
+
+.second-product {
+	width: 58rem;
+	margin-left: 7rem;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 2rem;
+}
+
+.second-product img {
+	width: 30rem;
+	border-radius: 0.8rem;
+}
+
+#retro-glasses {
+	width: 25rem;
+	height: 35rem;
+}
+
+.second-stacks {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.retro-glass {
+	width: 40rem;
+	height: 17rem;
+}
+
+@media screen and (max-width: 1295px) {
+	.second-product {
+		width: 45rem;
+		margin-left: 7rem;
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 2rem;
+	}
+
+	.second-stacks img {
+		width: 25em;
+		height: 10em;
+	}
+
+	.second-product img {
+		width: 22em;
+		height: 13em;
+		border-radius: 0.8rem;
+	}
+
+	#retro-glasses {
+		width: 20em;
+		height: 27em;
+	}
+}
+
+@media screen and (max-width: 1025px) {
+	.second-product {
+		width: 45rem;
+		margin-left: 7rem;
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 2rem;
+	}
+
+	.second-product img {
+		width: 23em;
+		height: 13em;
+		border-radius: 0.8rem;
+	}
+
+	#retro-glasses {
+		width: 20em;
+		height: 27em;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.second-product {
+		width: 45rem;
+		margin-left: 3rem;
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 2rem;
+	}
+
+	.second-product img {
+		width: 23em;
+		height: 13em;
+		border-radius: 0.8rem;
+	}
+}
+@media screen and (max-width: 770px) {
+	.second-product {
+		width: 33rem;
+		height: 60.5rem;
+		margin-left: 1.6rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		margin-bottom: 2rem;
+		align-items: center;
+	}
+
+	.second-product img {
+		width: 23em;
+		height: 13em;
+		border-radius: 0.8rem;
+	}
+
+	#retro-glasses {
+		width: 20rem;
+		height: 30em;
+	}
+
+	.second-stacks {
+		height: 28rem;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.second-product {
+		width: 20rem;
+		height: 57.5rem;
+		margin-left: 2.5rem;
+	}
+	.second-product img {
+		width: 20em;
+		height: 13em;
+		border-radius: 0.8rem;
+	}
+	#retro-glasses {
+		width: 19em;
+		height: 27em;
+	}
+	.second-stacks {
+		height: 28rem;
+	}
+}
+@media screen and (max-width: 380px) {
+	.second-product {
+		width: 17rem;
+		height: 51.2rem;
+		margin: auto;
+		margin-top: 1rem;
+	}
+	.second-product img {
+		width: 17em;
+		height: 11em;
+		border-radius: 0.8rem;
+	}
+
+	#retro-glasses {
+		width: 17rem;
+		height: 25em;
+	}
+	.second-stacks {
+		height: 24rem;
+	}
+}
+
+/**************************************End of second Product****************************************/
+
+/***************************************Why Us?**************************************************/
+
+.why-us {
+	background: #ffffff;
+	height: 13rem;
+}
+
+h6 {
+	padding: 1.3rem 0;
+	text-align: center;
+	font-family: 'Dancing Script', cursive;
+	font-size: 2rem;
+}
+
+.why {
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: column;
+	/* align-items: center; */
+}
+
+.why img {
+	width: 4rem;
+	margin-left: 4rem;
+	box-shadow: 0.3rem 0.3rem 0.3rem black;
+}
+
+.reasons-pic {
+	display: flex;
+	justify-content: space-around;
+}
+.reasons {
+	height: 5rem;
+	display: flex;
+	justify-content: space-around;
+}
+
+.reasons p {
+	color: rebeccapurple;
+}
+
+@media screen and (max-width: 1025px) {
+	.why img {
+		margin-left: 3rem;
+	}
+	.reasons p {
+		width: 10rem;
+		text-align: center;
+		margin-left: 3rem;
+	}
+}
+
+@media screen and (max-width: 770px) {
+	.why img {
+		margin-left: 1.7rem;
+	}
+
+	.reasons p {
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.why-us {
+		height: 11rem;
+	}
+	.why img {
+		width: 2rem;
+		margin-left: 2rem;
+	}
+
+	.reasons p {
+		font-size: 1rem;
+		width: 6rem;
+		text-align: center;
+	}
+}
+@media screen and (max-width: 380px) {
+	.why-us {
+		height: 11rem;
+	}
+	.why img {
+		width: 2rem;
+		margin-left: 1rem;
+	}
+
+	.reasons p {
+		font-size: 0.8rem;
+		width: 6.5rem;
+		text-align: center;
+		margin-left: 1rem;
+	}
+}
+
+/***************************************End of Why Us?**************************************************/
+
+/*****************************************Footer******************************************************/
+footer {
+	margin-top: 2rem;
+	background-color: black;
+	height: 5rem;
+	color: white;
+	text-align: center;
+	padding-top: 1.5rem;
+	margin-bottom: 0;
+}
+
+@media screen and (max-width: 500px) {
+	footer {
+		font-size: 0.8rem;
+	}
+}
+
+@media screen and (max-width: 380px) {
+	footer {
+		font-size: 0.6rem;
+	}
+}
+
+/*****************************************End of footer***********************************************/

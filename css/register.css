@@ -1,0 +1,265 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #3f4441;
+	background-image: url(/data/register_glasses.png);
+	background-size: 49% 100vh;
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+
+form {
+	background: #ed8d8d;
+	width: 23%;
+	height: 28rem;
+	margin: 11rem 0 0 12rem;
+	border-radius: 0.3rem;
+}
+
+h1 {
+	padding: 1rem 0;
+	font-family: 'Dancing Script', cursive;
+	text-align: center;
+	color: #332525;
+}
+
+div {
+	margin-top: 0.8rem;
+}
+
+label {
+	display: block;
+	width: 80%;
+	margin: auto;
+	margin-bottom: -0.9rem;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 0.8rem;
+	color: #352c2c;
+}
+
+.fields {
+	display: block;
+	width: 80%;
+	height: 1.9rem;
+	border-radius: 0.2rem;
+	border: 0;
+	margin: 1.3rem auto;
+	font-family: 'Montserrat', sans-serif;
+	padding: 0.4rem;
+	color: #4e3c3c;
+}
+
+.buttons {
+	width: 80%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.button {
+	border-radius: 0.3rem;
+	border: 0;
+	font-family: 'Dancing Script', cursive;
+	width: 4rem;
+	height: 2rem;
+	font-size: 1rem;
+}
+
+input[type="submit"] {
+	background: #55e9bc;
+}
+
+input[type="reset"] {
+	background: #6e7472;
+	color: white;
+}
+
+@media screen and (max-width: 1295px) {
+	form {
+		margin-left: 8.7rem;
+		width: 28%;
+	}
+}
+
+@media screen and (max-width: 1025px) {
+	body {
+		background-image: none;
+	}
+
+	#form {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+		margin: 0;
+		padding: 0;
+	}
+
+	form {
+		margin: 0;
+		height: 40rem;
+		width: 50%;
+	}
+	h1 {
+		font-size: 3rem;
+	}
+
+	label {
+		font-size: 1.2rem;
+	}
+
+	.fields {
+		height: 2.8rem;
+		font-size: 1.1rem;
+	}
+	.button {
+		width: 6rem;
+		height: 3rem;
+		font-size: 1.4rem;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	form {
+		width: 43%;
+		height: 61vh;
+	}
+	h1 {
+		font-size: 2.1rem;
+	}
+
+	.fields {
+		height: 1.7rem;
+	}
+	label {
+		font-size: 0.9rem;
+	}
+	.button {
+		width: 4rem;
+		height: 2rem;
+		font-size: 0.9rem;
+	}
+}
+
+@media screen and (max-width: 770px) {
+	form {
+		width: 50%;
+		height: 63vh;
+	}
+
+	h1 {
+		font-size: 2.1rem;
+	}
+
+	.fields {
+		height: 1.9rem;
+	}
+	label {
+		font-size: 0.95rem;
+	}
+	.button {
+		width: 4.3rem;
+		height: 2.1rem;
+		font-size: 1.1rem;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	form {
+		width: 65%;
+		height: 60vh;
+	}
+	h1 {
+		font-size: 2.1rem;
+	}
+
+	label {
+		font-size: 1rem;
+	}
+
+	.fields {
+		height: 1.7rem;
+	}
+	.button {
+		width: 3.6rem;
+		height: 1.9rem;
+		font-size: 1rem;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	form {
+		width: 65%;
+		height: 60vh;
+	}
+	h1 {
+		font-size: 2rem;
+	}
+
+	label {
+		font-size: 0.9rem;
+	}
+
+	.fields {
+		height: 1.7rem;
+	}
+	.button {
+		width: 3.4rem;
+		height: 1.8rem;
+		font-size: 0.8rem;
+	}
+}
+
+@media screen and (max-width: 415px) {
+	form {
+		width: 75%;
+		height: 26.5rem;
+	}
+
+	.button {
+		font-size: 0.9rem;
+	}
+	.fields {
+		font-size: 0.8rem;
+	}
+}
+
+@media screen and (max-width: 380px) {
+	form {
+		width: 85%;
+		height: 45vh;
+	}
+
+	.fields {
+		font-size: 0.8rem;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	form {
+		height: 63vh;
+	}
+}
+
+@media screen and (max-width: 360px) {
+	form {
+		height: 67vh;
+	}
+}
+@media screen and (max-width: 320px) {
+	form {
+		height: 75vh;
+	}
+
+	label {
+		font-size: 0.8rem;
+	}
+
+	.button {
+		font-size: 0.9rem;
+	}
+}
