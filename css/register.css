@@ -6,7 +6,7 @@
 
 body {
 	background-color: #3f4441;
-	background-image: url(/data/register_glasses.png);
+	background-image: url(../data/register_glasses.png);
 	background-size: 49% 100vh;
 	background-repeat: no-repeat;
 	background-position: right top;
